@@ -11,7 +11,7 @@ $("#login").on('submit', function(e){
         $("#loader").show();
       },
       success: function(str){
-         alert(str);
+         alert(str.Role);
         $("#loader").hide();
         if(str == 'Wrong'){
           $("#wmsg").show();
