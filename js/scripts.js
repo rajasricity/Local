@@ -11,6 +11,7 @@ $("#login").on('submit', function(e){
         $("#loader").show();
       },
       success: function(str){
+         alert(str);
         $("#loader").hide();
         if(str == 'Wrong'){
           $("#wmsg").show();
@@ -22,6 +23,9 @@ $("#login").on('submit', function(e){
         //localStorage.setItem("Userno",str);
         //location.href="Dashboard.html";
         }
+      },
+      error:function(qXHR, exception){
+      alert(jqXHR.status);
       }
    });
 });
