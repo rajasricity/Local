@@ -7,6 +7,7 @@ $("#login").on('submit', function(e){
       url:server+"checkLogin.php",
       data:fdata,
       type:"post",
+      dataType: "json",
       beforeSend: function(){
         $("#loader").show();
       },
