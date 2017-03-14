@@ -2,11 +2,16 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>LocalStorage</name>
     <description>
-        A blank PhoneGap app.
+        Local Storage Testing Application
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="sanarajasekhar@gmail.com" href="http://mukthasis.org">
+        Mukthasis Organisation
     </author>
     <content src="index.html" />
+    <allow-navigation href="http://*.*" />
+    <allow-navigation href="https://*.*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
     <access origin="*" />
 </widget>
