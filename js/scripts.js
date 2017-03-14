@@ -11,9 +11,9 @@ $("#login").on('submit', function(e){
         $("#loader").show();
       },
       success: function(str){
-         alert(str.Userno);
         $("#loader").hide();
-        if(str == 'Wrong'){
+        alert(str);
+        /*if(str == 'Wrong'){
           $("#wmsg").show();
           $("#mnumber").val('');
           $("#pword").val('');
@@ -22,7 +22,7 @@ $("#login").on('submit', function(e){
         alert(str.Role);
         //localStorage.setItem("Userno",str);
         //location.href="Dashboard.html";
-        }
+        }*/
       },
       error:function(qXHR, exception){
       alert(jqXHR.status);
