@@ -13,8 +13,14 @@
     <script>
         $(document).ready(function(){
            if(localStorage.getItem("User")){
-             alert("Yes Storage Working");
-             $("#test").html(localStorage.getItem("User"));
+             //$("#test").html(localStorage.getItem("User"));
+            $.ajax({
+               url:"https://panaromic.com/panaromic_app/fetchData.php",
+               type:"post",
+               success: function(str){
+                $("#test").html(str);
+               }
+            });
            }else{
              alert("First Time Creating");
              localStorage.setItem("User","Silparaj");
