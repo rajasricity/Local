@@ -8,6 +8,7 @@
         Mukthasis Organisation
     </author>
     <content src="index.html" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <allow-intent href="http://*/*" />
