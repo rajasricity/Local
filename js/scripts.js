@@ -11,15 +11,16 @@ $("#login").on('submit', function(e){
       beforeSend: function(){
         $("#loader").show();
       },
-      success: function(str){
+      success: function(str1){
+        str = jQuery.parseJSON(str1);
         $("#loader").hide();
-        if(str == 'Wrong'){
+        if(str.Userno == ''){
           $("#wmsg").show();
           $("#mnumber").val('');
           $("#pword").val('');
         }else{
         $("#wmsg").hide();
-        alert(str.Role);
+        alert(str.Userno);
         //localStorage.setItem("Userno",str);
         //location.href="Dashboard.html";
         }
