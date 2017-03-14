@@ -11,8 +11,7 @@ $("#login").on('submit', function(e){
       beforeSend: function(){
         $("#loader").show();
       },
-      success: function(str1){
-        str = jQuery.parseJSON(str1);
+      success: function(str){
         $("#loader").hide();
         if(str.Userno == ''){
           $("#wmsg").show();
