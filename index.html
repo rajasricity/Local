@@ -13,18 +13,20 @@
 </head>
 <body>
     <div class="container-fluid">
-
+<p id="simInfo"></p>
     </div>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script>
     $(document).ready(function(){
-        if(localStorage.getItem("Userno")){
-
-        }else{
-          location.href="Login.html";
-        }
+window.plugins.sim.getSimInfo(successCallback, errorCallback);
     });
+    function successCallback(result) {
+ document.getElementById("simInfo").innerHTML=JSON.stringify(result);
+ }
+function errorCallback(error) {
+ document.getElementById("simInfo").innerHTML=JSON.stringify(result);
+ }
 </script>
 </body>
 </html>
